@@ -17,7 +17,7 @@ class ProductPackLine(models.Model):
         index=True,
         required=True,
     )
-    quantity = fields.Float(required=True, default=1.0, digits="Product UoS",)
+    quantity = fields.Float(required=True, default=1.0, digits="Product Unit of Measure",)
     product_id = fields.Many2one(
         "product.product", "Product", ondelete="cascade", index=True, required=True,
     )
